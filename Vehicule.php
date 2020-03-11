@@ -3,6 +3,7 @@
 
     final class Vehicule extends Entity{
 
+       
         private $id;
         private $immat;
         private $modele;
