@@ -32,6 +32,7 @@
 
         public static function insert($sql){
             try{
+                var_dump($sql);
                 $stmt = self::$bdd->prepare($sql);
                 $result = $stmt->execute();
                 
@@ -60,6 +61,7 @@
                 $stmt->execute($params);
                 if($multiple){
                     $results = $stmt->fetchAll();
+                    var_dump($results);
                     if(count($results) == 1){
                         $results = $results[0];
                     }
