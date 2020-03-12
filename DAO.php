@@ -61,12 +61,12 @@
                 $stmt->execute($params);
                 if($multiple){
                     $results = $stmt->fetchAll();
-                    var_dump($results);
                     if(count($results) == 1){
                         $results = $results[0];
                     }
                 }
                 else $results = $stmt->fetch();
+                var_dump($results);
                 $stmt->closeCursor();
                 return $results;
             }
