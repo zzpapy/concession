@@ -6,7 +6,7 @@
     $sql = "SELECT *
             FROM vehicule v
             ";
-    $tab = ['toto'=>['jaune', 'vert']];
+    $tab = ['toto'=>['bleu', 'vert']];
     $tab = json_encode($tab);
     // $tab=[$tab];
     // var_dump($tab);
